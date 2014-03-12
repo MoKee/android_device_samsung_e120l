@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 PRODUCT_COPY_FILES += device/common/gps/gps.conf_US_SUPL:system/etc/gps.conf
 
 ## (2) Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/skyrocket/skyrocket-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/e120l/e120l-vendor.mk)
 
 ## overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/e120l/overlay
@@ -41,4 +41,4 @@ $(call inherit-product, device/samsung/celox-common/celox-common.mk)
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/skyrocket/skyrocket-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/e120l/e120l-vendor.mk)
